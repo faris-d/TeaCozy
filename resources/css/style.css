@@ -21,6 +21,7 @@ header {
 .header-container {
   display: flex;
   justify-content: space-between;
+  background-color: black;
 }
 
 .logo img {
@@ -39,4 +40,35 @@ nav span a:-webkit-any-link {
     text-decoration: underline;
     padding: 0px;
     margin-right: 10px;
+}
+
+.main-container {
+  display: flex;
+  position: relative;
+  top: 70px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mission-background {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+  height: 700px;
+  width: 1200px;
+}
+
+.mission-content {
+  position: relative;
+  top: 50%;
+  background-color: black;
+  padding: .1px;
+}
+
+.tea-container {
+  display: flex;
+  flex-flow: wrap column;
+}
+
+.item-image {
+  height: 200px;
+  width: 300px;
 }
