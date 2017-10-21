@@ -30,16 +30,20 @@ header {
 }
 
 nav {
-  text-decoration: underline;
+
   margin-right: 10px;
 }
 
 nav span a:-webkit-any-link {
-    color: seashell;
-    cursor: default;
-    text-decoration: underline;
-    padding: 0px;
-    margin-right: 10px;
+  color: seashell;
+  cursor: default;
+  text-decoration: underline;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav span {
+  padding-right: 10px;
 }
 
 .main-container {
@@ -61,13 +65,17 @@ nav span a:-webkit-any-link {
   position: relative;
   top: 50%;
   background-color: black;
-  padding: .1px;
+}
+
+.mission-content h2, h4 {
+  margin: 0px;
+  padding: 10px;
 }
 
 #shop {
   width: 1000px;
   height: 700px;
-  margin: 50px 100px;
+  margin: 20px 100px 20px 100px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -92,8 +100,13 @@ nav span a:-webkit-any-link {
   margin: 10px;
 }
 
-#locations {
+.item span {
+  font-weight: bold;
+}
 
+#locations {
+  margin: 0px;
+  padding: 100px 0px 10px 0px;
   align-items: center;
   justify-content: center;
   height: 500px;
