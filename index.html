@@ -6,8 +6,8 @@
     <title>Tea Cozy</title>
   </head>
 
-<!-- first commit -->
-<!-- 3 sections : header, main body and footer -->
+<!-- 3 sections : header, main-body-container and footer -->
+
   <body>
 
 <!-- header is fixed with a solid bottom border -->
@@ -23,15 +23,13 @@
       </nav>
     </header>
 
-<!-- Commit header-->
-
-<!-- Start of main body section - comprised of 3 sub-sections (Mission, Shop and
-Locations). Will set up a main flex container for the body. Main container
-position will be relative (70px from top of html). Display will be flex,
+<!-- Start of main body section - comprised of 4 sub-sections (Mission, Shop,
+Locations and contact). Will set up a main flex container for the body. Main
+container position will be relative (70px from top of html). Display will be flex,
 direction will be column -->
 
     <div class="main-container">
-      <div class="mission-background">
+      <div class="mission-background" id="mission">
         <div class="mission-content">
           <h2> Our Mission
           </h2>
@@ -41,39 +39,69 @@ direction will be column -->
         </div>
       </div>
 
-      <div class="shop-container">
+      <div id="shop">
         <h2> Tea of the Month
         </h2>
         <h4> What's Steeping at The Tea Cozy?
         </h4>
-        <span>
-          <img class="item-image" src="./resources/images/berryblitz.jpg">
-          Fall Berry Blitz Tea
-        </span>
-        <span>
-          <img class="item-image" src="./resources/images/spiced-rum.jpg">
-          Spiced Rum Tea
-        </span>
-        <span>
-          <img class="item-image" src="./resources/images/donut.jpg">
-          Seasonal Donuts
-        </span>
-        <span>
-          <img class="item-image" src="./resources/images/myrtle-ave.jpg">
-          Myrtle Ave Tea </span>
-        </span>
-        <span>
-          <img class="item-image" src="./resources/images/bizarre.jpg">
-          Bedford Bizarre Tea
-        </span>
+        <div class="container-items">
+          <div class="item">
+            <img src="./resources/images/berryblitz.jpg">
+            <span> Fall Berry Blitz Tea </span>
+          </div>
+          <div class="item">
+            <img src="./resources/images/spiced-rum.jpg">
+            <span> Spiced Rum Tea </span>
+          </div>
+          <div class="item">
+            <img src="./resources/images/donut.jpg">
+            <span> Seasonal Donuts </span>
+          </div>
+          <div class="item">
+            <img src="./resources/images/myrtle-ave.jpg">
+            <span> Myrtle Ave Tea </span>
+          </div>
+          <div class="item">
+            <img src="./resources/images/bizarre.jpg">
+            <span> Bedford Bizarre Tea </span>
+          </div>
+        </div>
       </div>
 
-      <div class="locations-container"> </div>
+      <div id="locations">
+        <h2>Locations</h2>
+        <div class="locations-container">
+          <div class="location">
+            <h3>Downtown</h3>
+            <p>384 West 4th St</p>
+            <p>Suite 108</p>
+            <p>Portland, Maine</p>
+          </div>
+          <div class="location">
+            <h3>East Bayside</h3>
+            <p>3433 Phisherman's Avenue</p>
+            <p>(Northwest Corner)</p>
+            <p>Portland, Maine</p>
+          </div>
+          <div class="location">
+            <h3> Oakdale </h3>
+            <p>515 Crescent Avenue</p>
+            <p>Second Floor</p>
+            <p>Portland, Maine</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        <h2>The Tea Cozy</h2>
+        <h5>contact@theteacozy.com</h5>
+        <h5>917-555-8904</h5>
+      </div>
     </div>
 
-
     <footer>
+      <h5>copyright The Tea Cozy 2017</h5>
     </footer>
+
 
   </body>
 

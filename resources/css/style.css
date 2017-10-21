@@ -47,7 +47,8 @@ nav span a:-webkit-any-link {
   position: relative;
   top: 70px;
   justify-content: center;
-  flex-direction: column;
+  align-content: center;
+  flex-flow: column wrap;
 }
 
 .mission-background {
@@ -63,12 +64,76 @@ nav span a:-webkit-any-link {
   padding: .1px;
 }
 
-.tea-container {
+#shop {
+  width: 1000px;
+  height: 700px;
+  margin: 50px 100px;
   display: flex;
-  flex-flow: wrap column;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
-.item-image {
+#shop h2 {
+  margin: 0px;
+}
+
+.container-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.item img {
   height: 200px;
   width: 300px;
+  display: block;
+  margin: 10px;
+}
+
+#locations {
+
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 1200px;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+}
+
+#locations h2 {
+  margin-bottom: 15px;
+}
+
+.locations-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.location {
+  display: block;
+  background-color: black;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px;
+  opacity: 1.0
+}
+
+.contact {
+  height: 200px;
+  width: 1200px;
+}
+
+.contact h2 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+footer {
+  text-align: left;
+  margin-top: 100px;
+  margin-left: 20px;
 }
